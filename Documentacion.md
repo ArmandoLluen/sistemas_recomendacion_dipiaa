@@ -157,6 +157,47 @@ class ContentBasedFiltering:
    - Se evaluó usando **Precision@10, Recall@10 y NDCG@10**.
    - La evaluación consideró usuarios con suficiente historial de ratings y se realizó un split train/test por usuario.
 
+## 📊 Resultados del Modelo
+
+### Perfil de un usuario de ejemplo
+- **USER ID:** 2
+- **Total ratings:** 17
+- **Average rating:** 3.24
+- **Preferred genres:** Drama (3), Romance (3), Action (2)
+
+**Películas altamente valoradas (4+ estrellas):**
+1. Night on Earth – ['Comedy', 'Drama'] – Rating: 5.0
+2. A Nightmare on Elm Street – ['Horror'] – Rating: 4.0
+3. Hero – ['Drama', 'Adventure', 'Action', 'History'] – Rating: 4.0
+4. The 39 Steps – ['Action', 'Thriller', 'Mystery'] – Rating: 4.0
+5. Talk to Her – ['Drama', 'Romance'] – Rating: 4.0
+
+**Recomendaciones content-based para USER 2:**
+1. The Story of a Cheat – ['Comedy', 'Drama'] – Similarity: 0.670 – Community rating: 3.74
+2. The Hunter – ['Drama', 'Thriller'] – Similarity: 0.663 – Community rating: 3.96
+3. Dead End – ['Horror', 'Thriller'] – Similarity: 0.661 – Community rating: 3.25
+4. Dreamcatcher – ['Drama', 'Horror', 'Science Fiction', 'Thriller'] – Similarity: 0.658 – Community rating: 3.24
+5. L – ['Drama', 'Thriller', 'Foreign'] – Similarity: 0.650 – Community rating: 3.40
+6. The Prisoner of Zenda – ['Action', 'Adventure', 'Comedy'] – Similarity: 0.650 – Community rating: 3.95
+7. Irreversible – ['Drama', 'Thriller', 'Crime', 'Mystery'] – Similarity: 0.644 – Community rating: 3.15
+8. Dr. Terror's House of Horrors – ['Horror'] – Similarity: 0.642 – Community rating: 3.47
+9. That Man from Rio – ['Action', 'Adventure', 'Comedy'] – Similarity: 0.642 – Community rating: 3.81
+10. Versus – ['Action', 'Horror'] – Similarity: 0.641 – Community rating: 2.98
+
+---
+
+### Evaluación general del modelo (muestra de 26 usuarios)
+- **Precision@10:** 0.038  
+- **Recall@10:** 0.189  
+- **NDCG@10:** 0.308  
+- **Usuarios evaluados:** 26
+
+**Interpretación:**
+- El modelo logra identificar parcialmente películas relevantes para los usuarios con historial suficiente.
+- La cobertura de películas relevantes es limitada (recall bajo), pero el ranking de las recomendaciones es consistente y justificable.
+- Se observa que algunas recomendaciones coinciden con los géneros favoritos del usuario y son explicables a través de palabras clave del contenido.
+
+
 ## 📈 Conclusiones
 
 1. **Perfil del usuario y preferencias**
