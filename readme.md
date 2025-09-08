@@ -5,7 +5,17 @@ Este repositorio contiene un proyecto de **sistemas de recomendación** enfocado
 El proyecto está dividido en dos notebooks principales:
 
 - **Procesamiento de datos.ipynb** → limpieza, transformación y preparación de la metadata y ratings.  
-- **Modelo.ipynb** → construcción del modelo de recomendación basado en contenido, generación de recomendaciones personalizadas y evaluación del desempeño.  
+- **Modelo.ipynb** → construcción del modelo de recomendación basado en contenido, generación de recomendaciones personalizadas y evaluación del desempeño. 
+
+## 📄 Archivos principales
+1. Procesamiento de datos.ipynb → Limpieza y preparación de datos.
+2. Modelo.ipynb → Construcción, prueba y evaluacion del modelo de recomendación.
+3. README.md → Descripción general del proyecto.
+4. Documentacion.md → Documento explicativo detallado del proyecto y sus resultados.
+5. ratings.csv → Dataset original que contiene los ratings de cada pelicula por usuario.
+6. reviews_final.csv → Dataset de ratings procesado para el uso del Modelo
+7. movies_metadata.csv → Dataset que contiene el detalle de cada pelicula.
+8. metadata_final → Dataset de metadatos procesado para el uso del Modelo
 
 ---
 
@@ -74,17 +84,6 @@ git clone https://github.com/usuario/repositorio.git
     Recomendaciones personalizadas para un usuario.
 
     Métricas de evaluación del sistema.
-
-
-## 📄 Archivos principales
-1. Procesamiento de datos.ipynb → Limpieza y preparación de datos.
-2. Modelo.ipynb → Construcción, prueba y evaluacion del modelo de recomendación.
-3. README.md → Descripción general del proyecto.
-4. report.md → Documento explicativo detallado del proyecto y sus resultados.
-5. ratings.csv → Dataset original que contiene los ratings de cada pelicula por usuario.
-6. reviews_final.csv → Dataset de ratings procesado para el uso del Modelo
-7. movies_metadata.csv → Dataset que contiene el detalle de cada pelicula.
-8. metadata_final → Dataset de metadatos procesado para el uso del Modelo
 
 
 ## 👤 Autor
